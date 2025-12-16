@@ -17,6 +17,31 @@ spec:
           installPlanApproval: Manual
         datasciencecluster:
           apiVersion: datasciencecluster.opendatahub.io/v2
+          components:
+            aipipelines:
+              argoWorkflowsControllers:
+                managementState: Removed
+              managementState: Removed
+            dashboard:
+              managementState: Managed
+            feastoperator:
+              managementState: Removed
+            kserve:
+              managementState: Managed
+            kueue:
+              managementState: Removed
+            llamastackoperator:
+              managementState: Managed
+            modelregistry:
+              managementState: Removed
+            ray:
+              managementState: Removed
+            trainingoperator:
+              managementState: Removed
+            trustyai:
+              managementState: Removed
+            workbenches:
+              managementState: Managed
         patcher:
           dashboard:
             replicas: 1
