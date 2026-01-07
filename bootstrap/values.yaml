@@ -11,9 +11,9 @@ deployer:
   apiUrl: https://api.cluster-guid.sandbox.opentlc.com:6443
 
 # Set to empty to NOT create workspaces
-workspace: ""
-# workspace:
-#   git:
-#     url: https://github.com/rhpds/ci-template-gitops.git
-#     revision: main
-#     path: workspace
+
+workspace:
+  git:
+    url: https://github.com/rhpds/agentic-ai-openshift-gitops.git
+    revision: main
+    path: workspace
