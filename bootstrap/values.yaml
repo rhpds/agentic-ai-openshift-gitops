@@ -10,6 +10,10 @@ deployer:
   domain: apps.cluster-guid.sandbox.opentlc.com
   apiUrl: https://api.cluster-guid.sandbox.opentlc.com:6443
 
+rhoai:
+  patcher:
+    route: true
+
 # Set to empty to NOT create workspaces
 
 workspace:
