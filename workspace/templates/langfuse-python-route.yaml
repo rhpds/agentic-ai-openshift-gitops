@@ -2,7 +2,7 @@ apiVersion: route.openshift.io/v1
 kind: Route
 metadata:
   name: chatbot-8002
-  namespace: showroom-{{ .Values.guid }}-1-{{ .Values.username }}
+  namespace: showroom-{{ .Values.guid }}-{{ .Values.username }}
 spec:
   port:
     targetPort: 8002
