@@ -20,6 +20,6 @@ rhoai:
 
 workspace:
   git:
-    url: https://github.com/blues-man/agentic-ai-openshift-gitops.git
-    revision: fix_rhoai_version
+    url: https://github.com/rhpds/agentic-ai-openshift-gitops.git
+    revision: main
     path: workspace
