@@ -8,7 +8,11 @@ spec:
   project: default
   source:
     repoURL: https://github.com/rhpds/ocp-cluster-addons
-    targetRevision: main
+    # TEST ONLY: normally `main`. Pinned to ocp-cluster-addons#11's branch so
+    # this dev test exercises PR #11's autoApprove support + working image
+    # together with agentic-ai-openshift-gitops#8's autoApprove: true below.
+    # Revert to `main` (and delete this branch) once both PRs merge.
+    targetRevision: fix/rhoai-working-cli-image-and-approver
     path: rhoai
     helm:
       values: |
