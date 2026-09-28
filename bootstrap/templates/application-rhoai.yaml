@@ -8,7 +8,7 @@ spec:
   project: default
   source:
     repoURL: https://github.com/rhpds/ocp-cluster-addons
-    targetRevision: main
+    targetRevision: fix-ose-cli-image-tag
     path: rhoai
     helm:
       values: |
