@@ -15,7 +15,7 @@ spec:
         operator:
           channel: fast-3.x
           startingCSV: rhods-operator.3.2.0
-          installPlanApproval: Manual
+          installPlanApproval: Automatic
         datasciencecluster:
           apiVersion: datasciencecluster.opendatahub.io/v2
           components:
@@ -48,7 +48,8 @@ spec:
             replicas: 1
           route: {{ .Values.rhoai.patcher.route }}
         helper-status-checker:
-          approver: true
+          enabled: false
+          approver: false
   destination:
     server: https://kubernetes.default.svc
   syncPolicy:
